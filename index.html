@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+    
+    <div class="havale">
+        <select id="Hesaplarim"class="form-select" aria-label="Default select example" required>
+            <option value="0">Hesap Seçiniz</option>
+            <option value="5000">Hasap1-Bakiye:5000</option>
+            <option value="60000">Hesap2-Bakiye:60000</option>
+          </select>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">TR</span>
+            <input id="iban" value=" " type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input id="para"type="text" value=" " class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+
+          <div id="sifre" class="hidden">
+            <input id="uisifre" type="number" class="form-control" maxlength="4" >
+          </div>
+
+          <div class="container">
+              <h1><span id="dakika">2</span>:<span id="saniye">00</span></h1>
+          </div>
+  
+    </div>
+    <button id="gonder" type="button" class="btn"> Gönder </button>
+    <button id="tamamla" type="button" class="btn"> Tamamla </button>
+    <script src="index.js"></script>
+</body>
+</html>
